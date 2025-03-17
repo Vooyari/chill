@@ -28,4 +28,7 @@ function clearStopwatch() {
 startPause.addEventListener('click', stopwatch);
 clear.addEventListener('click', clearStopwatch);
 
+
 //Приветик приветик
+
+
