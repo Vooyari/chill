@@ -3,3 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.section {
+    margin: 0 auto;
+    max-width: 1260px;
+    margin-bottom: 80px;
+}

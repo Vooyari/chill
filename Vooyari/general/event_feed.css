@@ -1,0 +1,63 @@
+/* Лента событий */
+.section button {
+  background-color: #eb6f6f;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  min-width: 196px;
+  min-height: 40px;
+  padding: 10px 20px;
+}
+.section button:hover {
+  background-color: #d85d5d;
+}
+.cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.highlight {
+  color: #ed7777;
+}
+
+.card {
+  max-width: 400px;
+  border: 3px solid #ed7777;
+  border-radius: 20px;
+}
+
+.button_and_date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  margin-top: 20px;
+}
+
+/* Грамоты */
+.gratitude_section {
+  background-image: url("../svg_icons/main.logo/gratitude_svg/hands.png");
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+
+.gratitude {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
