@@ -54,10 +54,784 @@
     transparent 100%
   );
 }
+@media (max-width: 1450px) {
+  .gratitude_section {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
 
 .gratitude {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
   flex-wrap: wrap;
+}
+
+/* Фотогалерея */
+.photo_gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.photo_gallery div {
+  border-radius: 25px;
+  border: 2px solid #ed7777;
+  overflow: hidden;
+}
+.photo_gallery img {
+  display: block;
+  width: 100%;
+}
+
+/* Партнёры */
+.partners {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 30px;
+}
+.partners_button {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+/* Сотруднечество */
+.invite_organization_section {
+  background-image: url("../svg_icons/main.logo/invite_organizations_svg/Group_1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  min-height: 100vh;
+  text-align: center;
+  position: relative;
+  margin-bottom: 80px;
+}
+.invite_organization_section div {
+  max-width: 1200px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+.invite_organization_section p {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+.invite_organization_section button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: #eb6f6f;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  min-width: 250px;
+  min-height: 55px;
+}
+
+.invite_organization_section button:hover {
+  background-color: #d85d5d;
+}
+
+/* Карточка с бабушкой */
+.granma {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  border: 2px solid #eb6f6f;
+  border-bottom: 10px solid #eb6f6f;
+  border-left: 10px solid #eb6f6f;
+  overflow: hidden;
+  border-radius: 30px;
+  margin-top: 50px;
+}
+
+.granma img {
+  display: block;
+}
+.info_granma {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 25px 70px;
+  max-width: 527px;
+}
+.info_granma p {
+  font-size: 22px;
+  color: grey;
+  line-height: 1.4;
+}
+.heart {
+  position: absolute;
+  right: -30px;
+  top: -20px;
+}
+.heart_small1 {
+  position: absolute;
+  right: -22px;
+  top: 70px;
+  width: 50px;
+}
+.heart_small2 {
+  position: absolute;
+  right: 55px;
+  top: 30px;
+  width: 60px;
+}
+
+/* Донаты */
+
+.section_donate {
+  margin-top: 80px;
+  background-image: url("../svg_icons/main.logo/gratitude_svg/hands.png");
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 20%,
+    black 80%,
+    transparent 100%
+  );
+}
+@media (max-width: 1450px) {
+  .section_donate {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+
+.donate_div {
+  margin: 0px auto 80px;
+  max-width: 650px;
+}
+.donate_card {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-top: 2px solid #eb6f6f;
+  border-right: 2px solid #eb6f6f;
+  border-left: 10px solid #eb6f6f;
+  border-bottom: 10px solid #eb6f6f;
+  border-radius: 25px;
+  position: relative;
+}
+.donate_card p {
+  font-size: 18px;
+  color: rgb(80, 80, 80);
+}
+
+.buttonfordonate {
+  border: none;
+  background-color: #eb6f6f;
+  height: 35px;
+  width: 35px;
+  border-radius: 999px;
+}
+.buttonfordonate:hover {
+  background-color: #bb5454;
+}
+
+.donation-type {
+  display: flex;
+  border: 2px solid #eb6f6f;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 500px;
+  margin-right: 30px;
+}
+
+.donation-type label {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #eb6f6f;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 1s, color 0.3s;
+}
+
+.donation-type input {
+  display: none;
+}
+.donation-type input:checked + label {
+  background-color: #eb6f6f;
+  color: #fff;
+}
+.donation-type label:hover {
+  background-color: #ebe5e5;
+}
+
+.inputfordonate {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid #eb6f6f;
+  border-radius: 10px;
+  color: #eb6f6f;
+  width: 100%;
+  transition: color 2s, background-color 2s;
+}
+.inputfordonate:focus {
+  color: black;
+}
+.inputfordonate:focus::placeholder {
+  color: black;
+  transition: all 1s;
+}
+.inputfordonate::placeholder {
+  color: #eb6f6f;
+}
+
+.divfor2input {
+  display: flex;
+  gap: 15px;
+}
+.divfor2input input:first-child {
+  flex: 5;
+}
+.divfor2input input:last-child {
+  flex: 4;
+}
+
+.divsum {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.divfor3input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.divfor3input div {
+  width: 120px;
+}
+
+.divfor3input label {
+  display: block;
+  cursor: pointer;
+  color: #eb6f6f;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 20px;
+  border: 2px solid #eb6f6f;
+  border-radius: 25px;
+  transition: background-color 1s, color 0.3s;
+}
+.divfor3input input {
+  display: none;
+}
+.divfor3input input:checked + label {
+  background-color: #eb6f6f;
+  color: #fff;
+}
+.divfor3input label:hover {
+  background-color: #ebe5e5;
+}
+
+.inputsum {
+  border: 2px solid #eb6f6f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #eb6f6f;
+  font-size: 20px;
+  width: 160px;
+  transition: color 2s, background-color 2s;
+}
+.inputsum:focus {
+  color: black;
+}
+.inputsum:focus::placeholder {
+  color: black;
+  transition: all 1s;
+}
+.inputsum::placeholder {
+  color: #eb6f6f;
+}
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.agreement {
+  margin-top: 20px;
+}
+.agreement div {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.banks {
+  margin-top: 20px;
+}
+.item_bank {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.banks3and2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.method-type {
+  position: absolute;
+  top: 280px;
+  left: 353px;
+  transform: rotate(90deg);
+  display: flex;
+  border: 2px solid #eb6f6f;
+  border-bottom: none;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  overflow: hidden;
+  max-width: 600px;
+  margin-right: 30px;
+  justify-content: space-between;
+}
+.method-type label {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #eb6f6f;
+  font-size: 20px;
+  text-align: center;
+  transition: background-color 1s, color 0.3s;
+}
+.method-type input {
+  display: none;
+}
+.method-type input:checked + label {
+  background-color: #eb6f6f;
+  color: #fff;
+}
+.method-type label:hover {
+  background-color: #ebe5e5;
+}
+
+/* Донаты */
+.donate_background {
+  background-image: url("../svg_icons/main.logo/donate.svg");
+  height: 135px;
+  margin-bottom: 30px;
+}
+.donate2_background {
+  background-image: url("../svg_icons/main.logo/donate2.svg");
+  height: 135px;
+  margin-bottom: 80px;
+}
+
+/* Помощь от волонтёров */
+
+.we_exist {
+  background-image: url("../svg_icons/main.logo/we_exist.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  margin-top: 80px;
+}
+.we_exist h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.we_exist p {
+  font-size: 22px;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+.content_weexist {
+  position: absolute;
+  max-width: 750px;
+  top: 10%;
+  left: 10%;
+}
+
+/* Карточка доната с девушкой */
+
+.woman_donate {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+.woman_donate_content {
+  border: 2px solid #eb6f6f;
+  border-radius: 25px;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 20;
+}
+.woman_donate_content div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.woman_donate_content h1 {
+  font-size: 2rem;
+}
+.woman_donate_content p {
+  font-size: 22px;
+}
+.woman_donate_content button {
+  max-width: 150px;
+  margin-left: auto;
+  margin-bottom: 0;
+}
+.woman_donate_img {
+  border: 2px solid #eb6f6f;
+  border-radius: 25px;
+  overflow: hidden;
+  flex: 19;
+}
+
+/* Наши программы */
+
+.our_programs {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards3 {
+  border: 2px solid #eb6f6f;
+  border-left: 10px solid #eb6f6f;
+  border-bottom: 10px solid #eb6f6f;
+  border-radius: 25px;
+  padding: 15px;
+  max-width: 405px;
+  background-color: #fff;
+}
+
+.our_programs h3 {
+  text-align: center;
+  color: #a92121;
+  height: 60px;
+}
+.our_programs p {
+  font-size: 20px;
+  min-height: 150px;
+}
+.cards3 div {
+  display: flex;
+  justify-content: center;
+}
+.cards3 button {
+  display: block;
+  width: 200px;
+}
+
+/* Рекомендации */
+.recommendation_small {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recommendation_small div {
+  background-image: url("../svg_icons/main.logo/recommendations_svg/2.svg");
+  background-repeat: no-repeat;
+  background-size: 400px;
+  width: 400px;
+  height: 145px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.recommendation_small div:first-child {
+  background-image: url("../svg_icons/main.logo/recommendations_svg/1.svg");
+  background-repeat: no-repeat;
+  background-size: 375px;
+  color: #a92121;
+}
+.recommendation_small p {
+  font-size: 22px;
+  max-width: 230px;
+  font-weight: bold;
+}
+
+.recommendation_big {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.recommendation_big div {
+  background-image: url("../svg_icons/main.logo/recommendations_svg/2.svg");
+  background-repeat: no-repeat;
+  background-size: 620px;
+  width: 620px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color:#fff;
+}
+.recommendation_big p {
+  font-size: 22px;
+  max-width: 450px;
+  font-weight: bold;
+}
+
+/* Наша команда */
+
+.our_team {
+  background-image: url("../svg_icons/main.logo/gratitude_svg/hands.png");
+  margin-bottom: 80px;
+  height: 100vh;
+  position: relative;
+}
+@media (max-width: 1450px) {
+  .gratitude_section {
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+}
+.img_people_1 {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_2 {
+  position: absolute;
+  left: 30%;
+  top: 35%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_3 {
+  position: absolute;
+  left: 70%;
+  top: 35%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_4 {
+  position: absolute;
+  left: 30%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_5 {
+  position: absolute;
+  left: 18%;
+  top: 18%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_6 {
+  position: absolute;
+  left: 13%;
+  top:43%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_7 {
+  position: absolute;
+  left: 20%;
+  top: 72%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_8 {
+  position: absolute;
+  left: 70%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_9 {
+  position: absolute;
+  left: 82%;
+  top: 18%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_10 {
+  position: absolute;
+  left: 87%;
+  top: 43%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+.img_people_11 {
+  position: absolute;
+  left: 80%;
+  top: 72%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.our_team div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  padding-top: 60vh;
+}
+@media (max-width: 1600px) {
+  .our_team img {
+    width: 15%;
+  }
+}
+@media (max-width: 1100px){
+  .our_team img {
+    display: none;
+  }
+}
+
+.our_team h1 {
+  font-size: 3rem;
+  color: #a92121;
+}
+.our_team p {
+  color: gray;
+  font-size: 2rem;
+}
+
+/* первая секция */
+
+.up-lifetime {
+  display: flex;
+}
+
+.heading2 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.heading2-text {
+  margin-top: 0;
+  color: #A92121;
+}
+
+.first-item {
+  display: flex;
+  align-items: center;
+  width: 636px;
+  height: 235px;
+  box-shadow: inset 10em 20em #ED7777;
+  justify-content: start;
+  border: 2px solid #ED7777;
+  border-left: 10px solid #ED7777;
+  border-bottom: 10px solid #ED7777;
+  border-radius: 25px;
+}
+
+.div-clothes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  min-width: 305px;
+  height: 223px;
+  border-radius: 20px;
+  background-color: #FFF;
+}
+
+.number-container-2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #A92121;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.text-container-2 {
+  width: 210px;
+  height: 48px;
+  font-size: 20px;
+  text-align: center;
+  color: #696969;
+}
+
+.text-clothes-container-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 41px;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+
+.second-item {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 306px;
+  height: 235px;
+  border-radius: 20px;
+  border-width: 2px;
+  border: 2px solid #ED7777;
+  border-left: 10px solid #ED7777;
+  border-bottom: 10px solid #ED7777;
+  border-radius: 25px;
+}
+
+.down-items {
+  display: flex;
+}
+
+.third-item {
+  margin-left: 330px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 306px;
+  height: 250px;
+  border-radius: 20px;
+  border-width: 2px;
+  border: 2px solid #ED7777;
+  border-left: 10px solid #ED7777;
+  border-bottom: 10px solid #ED7777;
+  border-radius: 25px;
+}
+
+.fourth-item {
+  margin-left: 354px;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 306px;
+  height: 250px;
+  border-radius: 20px;
+  border-width: 2px;
+  border: 2px solid #ED7777;
+  border-left: 10px solid #ED7777;
+  border-bottom: 10px solid #ED7777;
+  border-radius: 25px;
 }
