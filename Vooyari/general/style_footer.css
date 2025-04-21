@@ -74,12 +74,17 @@ h1, h2 {
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
+  cursor: pointer;
   border-radius: 999px;
   min-width: 196px;
   min-height: 40px;
   margin-bottom: 15px;
   padding: 10px 20px;
+}
+.btn_filled:hover {
+  background-color: #d85d5d;
 }
 a:hover .btn_filled {
   background-color: #d85d5d;
@@ -90,12 +95,17 @@ a:hover .btn_filled {
   border: 2px solid #eb6f6f;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 5px;
+  cursor: pointer;
   border-radius: 999px;
   min-width: 196px;
   min-height: 40px;
   margin-bottom: 15px;
   padding: 10px 20px;
+}
+.btn_outlined:hover {
+  background-color: #eee5e5;
 }
 a:hover .btn_outlined {
   background-color: #eee5e5;
